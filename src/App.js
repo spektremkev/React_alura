@@ -1,8 +1,18 @@
 import "./styles.css";
-import React from "react";
+import React, { Component } from "react";
+import ListaDeNotas from "./components/ListaDeNotas";
+import FormularioCadastro from "./components/FormularioCadastro";
+
 import { render } from "react-dom";
 
-function App() {
-  return <h1> Meu app react</h1>;
+class App extends Component {
+  render() {
+    return (
+      //<h1> Meu app react</h1>;
+      <form>
+        <ListaDeNotas />
+      </form>
+    );
+  }
 }
 export default App;
